@@ -1,0 +1,207 @@
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.post-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.image-preview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-upload {
+  padding: 0.5rem 1rem;
+  background: rgba(100, 108, 255, 0.1);
+  color: var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.file-upload:hover {
+  background: rgba(100, 108, 255, 0.2);
+}
+
+.file-upload input {
+  display: none;
+}
+
+.submit-btn {
+  padding: 0.5rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background: var(--primary-hover);
+}
+
+.submit-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.post-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.post-text {
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.post-image-container {
+  margin-top: 1rem;
+}
+
+.post-image {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  display: block;
+}
+
+.about-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-content {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.tech-stack {
+  margin-top: 2rem;
+}
+
+.tech-stack ul {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+.tech-stack li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+.main-nav {
+  background: rgba(26, 26, 26, 0.9);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(74, 107, 255, 0.1);
+  color: var(--primary);
+}
+
+.search-bar input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  width: 200px;
+}
+
+.search-bar input:focus {
+  border-color: var(--primary);
+}
+
+/* Rest of your existing App.css */
