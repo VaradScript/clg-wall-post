@@ -1,0 +1,70 @@
+:root {
+  --primary: #4a6bff;
+  --primary-hover: #3a5af0;
+  --background: #1a1a1a;
+  --text: #ffffff;
+  --card-bg: #2a2a2a;
+  --border-radius: 12px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 10;
+  min-height: 90vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('./assets/n4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text);
+  line-height: 1.0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: rgba(26, 26, 26, 0.9);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-hover);
+  background: rgba(100, 108, 255, 0.1);
+}
+
+.app-container {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(18, 18, 18, 0.8  );}
