@@ -2,7 +2,6 @@
 
 A collaborative social wall platform built during a MERN stack workshop, allowing students to share posts, images, and moments.
 
-![App Screenshot](/public/screenshot.png) 
 
 ## 🌟 Features
 
